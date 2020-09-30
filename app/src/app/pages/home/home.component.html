@@ -1,22 +1,22 @@
   
-<div #home>
+<div class=home-component>
     <div class="panel-heading">
-        <span class="label label-default label-center">{{title}}</span>
+        <span class="panel-title">{{constants.HOME_TITLE}}</span>
     </div>
     <div class="panel-body">
     <img class="image-center" src="{{image}}"  alt="D and D Logo"/>
     <div class="list-group">
         <div class="list-group-item">
             <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
-            <a [href]="beginnerCampaigns" target="_blank"><strong>Suggested Beginner Campaigns for DMs</strong></a>
+            <a [href]="beginnerCampaigns" target="_blank"><strong>{{constants.BEGINNER_CAMPAIGNS}}</strong></a>
         </div>
         <div class="list-group-item">
             <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
-            <a routerLink="/createCampaign"><strong>Create a Campaign</strong></a>
+            <a routerLink="/createCampaign"><strong>{{constants.CREATE_CAMPAIGN}}</strong></a>
         </div>
         <div class="list-group-item">
             <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
-            <a routerLink="/loginCampaign"><strong>Join Your Campaign</strong></a>
+            <a routerLink="/loginCampaign"><strong>{{constants.JOIN_CAMPAIGN}}</strong></a>
         </div>
     </div>
 </div>

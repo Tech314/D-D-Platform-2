@@ -1,0 +1,34 @@
+
+.home-component {
+    padding: 0 4rem;
+    .panel-heading {
+        background-color: $red;
+        text-align: center;
+        .panel-title {
+            color: $black;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+    }
+
+    .image-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .panel-body  {
+        word-break: break-all;
+    }
+    
+    .panel-footer {
+        background-color: $black;
+    }
+    
+    .list-group {
+        margin-top: 10px;
+        .list-group-item {
+            background-color: $off-white;
+        }
+    }    
+}

@@ -25,7 +25,9 @@ export class AppComponent implements OnInit {
     let language = this.cookieService.get('Pref_Lang');
     if (!language) {
       language = 'en';
-      this.cookieService.set('Pref_Lang', 'en', new Date(20211212), '/', environment.cookieDomain);
+      const date = new Date();
+      date.setFullYear(date.getFullYear() + 1);
+      this.cookieService.set('Pref_Lang', 'en', new Date(), '/', environment.cookieDomain);
     }
 
     this.translationService.setLanguage(language === 'en' ? englishConstants : spanishConstants);

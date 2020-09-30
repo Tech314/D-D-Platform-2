@@ -1,3 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '_variables.scss';
+// import variables
+@import '_variables';
+
+// import page styles
+@import 'pages/home';
