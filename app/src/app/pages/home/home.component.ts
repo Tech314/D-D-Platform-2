@@ -1,6 +1,7 @@
 
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { RouterService } from 'src/app/shared/services/routerService/router.service';
 import { TranslationService } from '../../shared/services/translationService/translation.service';
 
 @Component({
@@ -16,7 +17,10 @@ export class HomeComponent implements OnInit, OnDestroy {
     private $language: Subscription;
     public constants: any;
 
-    constructor(private translationService: TranslationService) {}
+    constructor(
+        private translationService: TranslationService,
+        private routerService: RouterService
+    ) {}
 
     public ngOnInit() {
         this.$language = this.translationService.getLanguage().subscribe((constants) => {
@@ -28,5 +32,9 @@ export class HomeComponent implements OnInit, OnDestroy {
         if (this.$language) {
             this.$language.unsubscribe();
         }
+    }
+
+    public navigateTo(url: string) {
+        this.routerService.navigate(url);
     }
 }

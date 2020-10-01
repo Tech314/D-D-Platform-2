@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { TranslationService } from './shared/services/translationService/translation.service';
 import { CookieService } from 'ngx-cookie-service';
 import { HomeComponent } from './pages/home/home.component';
+import { RouterService } from './shared/services/routerService/router.service';
+import { StorageService } from './shared/services/storageService/storage.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HomeComponent } from './pages/home/home.component';
   ],
   providers: [
     TranslationService,
-    CookieService
+    CookieService,
+    RouterService,
+    StorageService
   ],
   bootstrap: [AppComponent]
 })

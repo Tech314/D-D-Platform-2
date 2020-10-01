@@ -12,11 +12,11 @@
         </div>
         <div class="list-group-item">
             <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
-            <a routerLink="/createCampaign"><strong>{{constants.CREATE_CAMPAIGN}}</strong></a>
+            <a (click)="navigateTo('createCampaign')"><strong>{{constants.CREATE_CAMPAIGN}}</strong></a>
         </div>
         <div class="list-group-item">
             <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
-            <a routerLink="/loginCampaign"><strong>{{constants.JOIN_CAMPAIGN}}</strong></a>
+            <a (click)="navigateTo('loginCampaign')"><strong>{{constants.JOIN_CAMPAIGN}}</strong></a>
         </div>
     </div>
 </div>
