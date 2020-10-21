@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
-@Configuration
-@EnableJpaRepositories(basePackages = "com.tech314.DDDataService.Repository")
+//@Configuration
+//@EnableJpaRepositories(basePackages = "com.tech314.DDDataService.Repository")
 public class JpaConfig {
 
 	
